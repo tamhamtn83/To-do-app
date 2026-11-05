@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb4cba8015.js" crossorigin="anonymous"></script>
+
+    <title>Todo</title>
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+        <div class="header">
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h1>To Do List</h1>
+        </div>
+    </header>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Home</h2>
+            <div class="nav-bar">
+                <button id="inbox" class="button nav-item" style="display: flex;gap: 2px;">
+                    <i class="fa-solid fa-inbox"></i>
+                    <p> Inbox </p>
+                </button>
+                <button id="today" class="button nav-item">
+                    <i class="fa-solid fa-meteor"></i>
+                    Today
+                </button>
+                <button id="upcoming" class="button nav-item">
+                    <i class="fa-solid fa-calendar"></i>
+                    Upcoming
+                </button>
+            </div>
+            <h2>Projects</h2>
+            <div class="nav-bar">
+                <div id="project-list" class="project-list">
+                </div>
+                <button class="button nav-item add-project" id="add-project">
+                    <i class="fa-solid fa-plus" style="margin-right: 7px;"></i>
+                    Add Project</button>
+                <div id="project-popup-container" class="project-popup-container" ></div>
+
+            </div>
+        </div>
+        <main>
+            <div id="main-panel" class="main-panel">
+                <div id="content-panel">
+                    <div id="main-header">
+                    </div>
+                    <div id="main-content"> 
+                        <ul id="task-list" class="task-list">
+
+                        </ul>      
+                    </div>
+                    <div id="add-task-div">
+                        <button id="add-task" class="button add-task"><i class="fa-solid fa-plus" style="margin-right: 7px;"></i>Add task</button>
+                    </div>
+                </div>
+                <div id="popup-container" class="add-task-popup-container">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
